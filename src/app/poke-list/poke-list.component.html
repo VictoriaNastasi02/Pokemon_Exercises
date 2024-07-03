@@ -1,0 +1,15 @@
+
+<h2>My Pokemons</h2>
+<ul class="pokemon">
+  @for (pokemon of pokemons; track pokemon.id) {
+    <li>
+      {{pokemon.id}} {{pokemon.name}} {{pokemon.type}}
+     </li> 
+    } 
+    <br>
+     @for (attack of attacks; track attack.id) {
+     <li>
+      {{attack.id}} {{attack.name}} {{attack.type}}
+     </li>
+  }
+</ul>
